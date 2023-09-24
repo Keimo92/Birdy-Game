@@ -1,0 +1,34 @@
+{
+    "name": "PlayerFly",
+    "maps": [
+        {
+            "name": "Game",
+            "id": "92c9d0af-3e46-46f5-b351-6719138a7d50",
+            "actions": [
+                {
+                    "name": "Fly",
+                    "type": "Value",
+                    "id": "36d2bec4-4db3-4633-97ff-087e20ac4a42",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "e06167fc-2818-4084-8d2d-0207bab32d22",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "Tap",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Fly",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
