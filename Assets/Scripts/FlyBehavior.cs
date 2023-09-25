@@ -35,6 +35,8 @@ public class FlyBehavior : MonoBehaviour
             rb.velocity = Vector2.up * _velocity;
             Flap();
             Debug.Log("Flapping");
+            rb.IsAwake();
+            
 
         }
     } 
@@ -61,7 +63,9 @@ public class FlyBehavior : MonoBehaviour
             Die();
             FlyBehavior flybehavior = GetComponent<FlyBehavior>();
 
+            flybehavior.enabled = false;
 
+           
             
 
 
@@ -95,9 +99,9 @@ public class FlyBehavior : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Point"))
         {
-            Scoring.instance.AddPoint(10);
+            Scoring.instance.AddPoint(50);
 
-
+            collision.enabled = false;
         }
     }
     
@@ -109,6 +113,11 @@ public class FlyBehavior : MonoBehaviour
         Flap();
        
     }
+
+
+  
+
+
 
 }
 

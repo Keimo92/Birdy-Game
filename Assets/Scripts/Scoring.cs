@@ -33,6 +33,6 @@ public class Scoring : MonoBehaviour
         score = score + pointValue;
         scoreText.text = score.ToString() + " Points";
         if (highScore < score)
-            PlayerPrefs.SetInt("HighScore ", score);
+            PlayerPrefs.SetInt("HighScore", score);
     }
 }
